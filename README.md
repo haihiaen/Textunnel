@@ -41,7 +41,9 @@ There is no unlimited-file-size, fixed-speed or unattended background-clipboard 
 
 The [dated physical-test table](https://textunnel.com/transfer-guide#tested-behavior) and [acceptance summary](https://textunnel.com/acceptance-summary.md) describe the actual devices, conditions, sizes, successes and failures tested. iPhone Safari ↔ Mac checks include 1 MiB and 64 MiB file round trips with matching SHA-256 hashes. Continuous lock-screen/background transfer failed; return-to-page and manual-retry recovery passed in the recorded cases.
 
-Windows/Android results will only be added after testing on the stated environment. Virtual machines, emulators, cloud devices and physical same-Wi-Fi sessions will be labeled separately. Browser support is not a claim that every device configuration has been tested.
+A separate October 22, 2026 check on **Windows Server 2025 Datacenter / Chrome 155.0.8059.85** passed text delivery, 1 MiB and 64 MiB file round trips with matching download SHA-256 hashes, and 64 MiB refusal handling. It used two browser contexts on one GitHub-hosted Windows VM with controlled host candidates. See the [Windows environment and all six results](https://textunnel.com/transfer-guide#browser-tests) and [published JSON](https://textunnel.com/windows-browser-acceptance.json).
+
+Physical Windows, iPhone-to-Windows and Android sessions remain unverified. Virtual machines, emulators, cloud devices and physical same-Wi-Fi sessions are labeled separately. Browser support is not a claim that every device configuration has been tested.
 
 ## Feedback
 
